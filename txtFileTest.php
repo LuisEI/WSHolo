@@ -21,13 +21,6 @@ $packet = new WriteSingleRegisterRequest($startAddress, $value * 1000, $unitID);
 try {
     $binaryData = $connection->connect()
         ->sendAndReceive($packet);
-    // echo 'Binary received (in hex):   ' . unpack('H*', $binaryData)[1] . PHP_EOL;
-
-    // /* @var $response WriteSingleRegisterResponse */
-    // $response = ResponseFactory::parseResponseOrThrow($binaryData);
-    // echo 'Parsed packet (in hex):     ' . $response->toHex() . PHP_EOL;
-    // echo 'Register value parsed from packet:' . PHP_EOL;
-    // print_r($response->getWord()->getInt16());
     echo '';
 
 } catch (Exception $exception) {
