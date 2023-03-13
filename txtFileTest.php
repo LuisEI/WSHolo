@@ -9,7 +9,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $connection = BinaryStreamConnection::getBuilder()
     ->setPort(502)
-    ->setHost('192.168.0.101')
+    ->setHost('192.168.0.232')
     ->build();
 
 $startAddress = 1;
